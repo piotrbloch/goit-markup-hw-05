@@ -22,29 +22,6 @@
     />
   </head>
   <body>
-    <!-- okno modalne -->
-    <button class="btn-open">open modal</button>
-
-    <div class="backdrop is-open">
-      <div class="modal">
-        <nav style="display: flex">
-          <h2>Modal</h2>
-          <button>X</button>
-        </nav>
-      </div>
-    </div>
-
-    <script>
-      const btn = document.querySelector('.btn-open');
-      const backdrop = document.querySelector('.backdrop');
-
-      const toggleModal = () => backdrop.classList.toggle('is-open');
-
-      backdrop.addEventListener('click', toggleModal);
-      btn.addEventListener('click', toggleModal);
-    </script>
-    <!-- okno modalne -->
-
     <header class="body-header">
       <div class="header-div container">
         <nav class="header-nav">
@@ -580,6 +557,30 @@
           </form>
         </div>
       </div>
+      <!-- okno modalne -->
+
+      <!-- <button class="btn-open">open modal</button> -->
+
+      <div class="backdrop is-open">
+        <div class="modal">
+          <nav style="display: flex">
+            <h2>Modal</h2>
+            <button>X</button>
+          </nav>
+        </div>
+      </div>
+
+      <!-- <script>
+      const btn = document.querySelector('.btn-open');
+      const backdrop = document.querySelector('.backdrop');
+
+      const toggleModal = () => backdrop.classList.toggle('is-open');
+
+      backdrop.addEventListener('click', toggleModal);
+      btn.addEventListener('click', toggleModal);
+    </script> -->
+
+      <!-- okno modalne -->
     </footer>
   </body>
 </html>
