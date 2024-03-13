@@ -3,6 +3,8 @@
   --svg-color: #f4f4fd;
   --social-color: #ffffff;
   --footer-link-color: #4d5ae5;
+  --modal-p-color: #2e2f42;
+  --modal-label-color: #8e8f99;
 }
 
 body {
@@ -107,6 +109,31 @@ p {
   visibility: visible;
   opacity: 1;
   transition: opacity 1200ms;
+}
+.modal-p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--modal-p-color);
+  margin-bottom: 16px;
+
+
+}
+
+.modal-form-div {
+  margin-bottom: 8px;
+}
+
+.modal-label{
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--modal-label-color);
+  display:block;
+  margin-bottom: 4px;
+  
 }
 
 /* okno modalne */
