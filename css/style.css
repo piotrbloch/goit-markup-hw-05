@@ -35,26 +35,77 @@ p {
 /* okno modalne */
 
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
-  opacity: 0;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* visibility: hidden; */
+  /* opacity: 0; */
 }
 
 .modal {
-  visibility: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 400px;
-  height: 400px;
-  background-color: white;
-  pointer-events: none;
+  width: 408px;
+  min-height: 584px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 72px 24px 24px 24px;
+
+  /* visibility: hidden; */
+  /* background-color: white; */
+  /* pointer-events: none; */
+}
+
+.modal-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-button:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-button-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button-svg:hover {
+  fill: #ffffff;
+}
+
+.modal-button-svg:focus {
+  fill: #ffffff;
 }
 
 .backdrop.is-open,
@@ -573,18 +624,17 @@ lub
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-
-}.fotter-input-name::placeholder {
-color: #ffffff;
-  
 }
-.fotter-button-name{
+.fotter-input-name::placeholder {
+  color: #ffffff;
+}
+.fotter-button-name {
   min-width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -592,12 +642,10 @@ color: #ffffff;
   color: #ffffff;
   cursor: pointer;
   background-color: #4d5ae5;
-  border:none;
+  border: none;
   border-radius: 4px;
-
-
 }
 
-.button-svg{
+.button-svg {
   margin-left: 16px;
 }
