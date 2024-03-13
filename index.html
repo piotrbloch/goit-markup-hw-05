@@ -22,6 +22,29 @@
     />
   </head>
   <body>
+    <!-- okno modalne -->
+    <button class="btn-open">open modal</button>
+
+    <div class="backdrop is-open">
+      <div class="modal">
+        <nav style="display: flex">
+          <h2>Modal</h2>
+          <button>X</button>
+        </nav>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector('.btn-open');
+      const backdrop = document.querySelector('.backdrop');
+
+      const toggleModal = () => backdrop.classList.toggle('is-open');
+
+      backdrop.addEventListener('click', toggleModal);
+      btn.addEventListener('click', toggleModal);
+    </script>
+    <!-- okno modalne -->
+
     <header class="body-header">
       <div class="header-div container">
         <nav class="header-nav">
@@ -536,6 +559,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="container-form">
+          <p class="fotter-p-form">Subscribe</p>
+          <form action="" class="fotter-form">
+            <label for="" class="fotter-label">
+              <input
+                name="fotter-input-name"
+                type="email"
+                placeholder="E-mail"
+                class="fotter-input-name"
+              />
+              <button type="submit" class="fotter-button-name">
+                Subscribe
+                <svg class="button-svg" width="24" height="24">
+                  <use href="./images/button.svg"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
