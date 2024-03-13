@@ -118,8 +118,6 @@ p {
   letter-spacing: 0.02em;
   color: var(--modal-p-color);
   margin-bottom: 16px;
-
-
 }
 
 .modal-form-div {
@@ -133,7 +131,7 @@ p {
   color: var(--modal-label-color);
   display:block;
   margin-bottom: 4px;
-  
+
 }
 
 /* okno modalne */
