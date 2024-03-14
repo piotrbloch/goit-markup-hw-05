@@ -6,6 +6,7 @@
   --modal-p-color: #2e2f42;
   --modal-label-color: #8e8f99;
   --modal-privacy-color: #8e8f99;
+  --modal-privacy-link-color: #4d5ae5;
 }
 
 body {
@@ -213,7 +214,16 @@ p {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
 
+.check:checked + .modal-privacy span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.modal-privacy-link {
+  color: var(--modal-privacy-link-color);
 }
 
 /* okno modalne */
