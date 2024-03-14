@@ -605,7 +605,7 @@
             </div>
           </div>
           <div class="modal-form-div">
-            <label for="user-email" class="modal-label">E-mail </label>
+            <label for="user-email" class="modal-label">Email </label>
             <div class="modal-name">
               <input
                 id="user-name"
@@ -622,16 +622,29 @@
 
           <div class="modal-form-div-comment">
             <label for="user-comment" class="modal-label">Comment </label>
-            <div class="modal-name">
-<textarea id="user-comment" placeholder="Text input" class="modal-input-comment">
 
-</textarea>
-              <svg class="modal-svg-person" width="18" height="24">
-                <use href="./images/modal.svg#email"></use>
-              </svg>
-            </div>
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+              class="modal-input-comment"
+            >
+            </textarea>
           </div>
 
+          <div class="modal-form-div-check">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+              class="modal-input-privacy .visually-hidden"
+            />
+
+            <label for="user-privacy" class="modal-privacy"
+              >I accept the terms and conditions of the</label
+            >
+          </div>
         </form>
       </div>
     </div>

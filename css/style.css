@@ -5,6 +5,7 @@
   --footer-link-color: #4d5ae5;
   --modal-p-color: #2e2f42;
   --modal-label-color: #8e8f99;
+  --modal-privacy-color: #8e8f99;
 }
 
 body {
@@ -186,6 +187,17 @@ p {
 
 .modal-input-comment:focus {
   border-color: #4d5ae5;
+}
+
+.modal-form-div-check {
+  margin-bottom: 24px;
+}
+
+.modal-privacy {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--modal-privacy-color);
 }
 
 /* okno modalne */
