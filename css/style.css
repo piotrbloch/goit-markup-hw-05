@@ -226,7 +226,7 @@ p {
   color: var(--modal-privacy-link-color);
 }
 
-.modal-button {
+.modal-button-privacy {
   display: block;
   min-width: 169px;
   height: 56px;
